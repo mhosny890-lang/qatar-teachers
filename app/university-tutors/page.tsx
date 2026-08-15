@@ -1,0 +1,1 @@
+import SimplePage from '../../components/SimplePage';import TeacherCard from '../../components/TeacherCard';import {demoTeachers} from '../../lib/data';export default function Page(){return <SimplePage title="مدرسون جامعيون"><div className="cards">{demoTeachers.slice(1).map(t=><TeacherCard key={t.id} t={t}/>)}</div></SimplePage>}
