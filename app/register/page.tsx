@@ -1,1 +1,8 @@
-import SimplePage from '../../components/SimplePage';export default function Page(){return <SimplePage title="إنشاء حساب"><div className="dual"><div className="panel"><h2>سجل كمدرس</h2><p>البيانات الشخصية، المواد، المراحل، الخبرة، الأسعار، أونلاين أو حضوري.</p><button className="primary">تسجيل مدرس</button></div><div className="panel"><h2>سجل كمركز تعليمي</h2><p>الموقع، المواد، الأسعار، التواصل، الصور وموقع Google Maps.</p><button className="primary">تسجيل مركز</button></div></div></SimplePage>}
+'use client';
+import Header from '../../components/Header';
+import {useState} from 'react';
+
+export default function Page(){
+ const [type,setType]=useState<'teacher'|'center'>('teacher');
+ const [done,setDone]=useState(false);
+ const submit=(e:React.FormEvent<HTMLFormElement>)=>{e.preventDefault(); const data=Object.fromEntries(new FormData(e.currentTarget).entries()); const list=JSON.parse(localStorage.getItem('qt_reg
