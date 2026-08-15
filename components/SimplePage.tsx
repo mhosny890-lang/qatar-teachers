@@ -1,0 +1,1 @@
+import Header from './Header';export default function SimplePage({title,children}:{title:string,children:React.ReactNode}){return <><Header/><main className="section"><div className="container"><div className="sectionTitle"><h2>{title}</h2></div>{children}</div></main></>}
