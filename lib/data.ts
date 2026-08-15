@@ -1,0 +1,1 @@
+export const demoTeachers=[{id:'1',nameAr:'أحمد السعدي',subjectAr:'القرآن الكريم',experience:12,rating:4.9,price:120},{id:'2',nameAr:'محمود حمدي',subjectAr:'الرياضيات',experience:10,rating:4.8,price:150},{id:'3',nameAr:'سارة أحمد',subjectAr:'اللغة الإنجليزية',experience:8,rating:4.9,price:140},{id:'4',nameAr:'مريم خالد',subjectAr:'الفيزياء',experience:9,rating:4.7,price:135}];
